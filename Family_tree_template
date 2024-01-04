@@ -1,0 +1,21 @@
+@startuml
+class "Daddy" {
+- dateOfBirth: dd mm yyyy
+}
+class "Mammy" {
+- dateOfBirth: dd mm yyyy
+}
+class "Child 1" {
+- dateOfBirth: dd mm yyyy
+}
+class "Child 2" {
+- dateOfBirth: dd mm yyyy
+}
+class "Child 3" {
+- dateOfBirth: dd mm yyyy
+}
+"Daddy" --|> "Mammy" : married since dd mm yyyy
+"Daddy" *- "Child 1"
+"Daddy" *- "Child 2"
+"Daddy" *- "Child 3"
+@enduml
